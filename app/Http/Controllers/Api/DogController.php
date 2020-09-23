@@ -16,7 +16,7 @@ class DogController extends Controller
      */
     public function index()
     {
-        return Dog::all();
+        return response()->json(Dog::all());
     }
 
     /**
