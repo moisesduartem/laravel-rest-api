@@ -38,7 +38,7 @@ class DogController extends Controller
      */
     public function show($id)
     {
-        //
+        return Dog::findOrFail($id);
     }
 
     /**

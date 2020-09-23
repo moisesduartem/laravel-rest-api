@@ -17,5 +17,6 @@ use Illuminate\Http\Request;
 //     return $request->user();
 // });
 
+Route::get('dogs/{id}', 'Api\\DogController@show');
 Route::get('dogs', 'Api\\DogController@index');
 Route::post('dogs', 'Api\\DogController@store');
