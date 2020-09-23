@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\api;
 
 use App\Http\Controllers\Controller;
+use App\Models\Dog;
 use Illuminate\Http\Request;
+
 
 class DogController extends Controller
 {
@@ -14,7 +16,7 @@ class DogController extends Controller
      */
     public function index()
     {
-        //
+        return Dog::all();
     }
 
     /**
