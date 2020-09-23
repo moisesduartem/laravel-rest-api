@@ -15,6 +15,8 @@ class CreateDogsTable extends Migration
     {
         Schema::create('dogs', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('raca');
+            $table->string('nome');
             $table->timestamps();
         });
     }
