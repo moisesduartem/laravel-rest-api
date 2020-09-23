@@ -18,3 +18,4 @@ use Illuminate\Http\Request;
 // });
 
 Route::get('dogs', 'Api\\DogController@index');
+Route::post('dogs', 'Api\\DogController@store');
