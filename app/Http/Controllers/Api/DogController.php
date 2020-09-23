@@ -50,7 +50,8 @@ class DogController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $dog = Dog::findOrFail($id);
+        $dog->update($request->all());
     }
 
     /**
